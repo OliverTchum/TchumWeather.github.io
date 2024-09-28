@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+<title>Weather</title>
+<link href="styles.css" rel="stylesheet" >
+
+</head>
+
+<body>
+<main>
+    <div id="info"class="searchbox">
+        <h1 class="searchtitle">Weather</h1>
+        <h2 class="searchtitle">Find a Forecast</h2>
+        <div class="row">
+            <input type="text" id="location-search" placeholder="Enter City/Town name, or Postcode">
+            <button onclick="firstsearch()">Search</button>
+        </div>
+    </div>
+    <div class="weatherbox">
+        <div class="search-container">
+            
+        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Press Enter to Search Again">
+        <label class="searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+      
+    </div>
+        <h1 class="weather location">London</h1>
+        <img id="weather-icon" src="images/sun.png"/>
+        <h1 class="weather temp">23°C|768°F</h1>
+        <p class="weather feel">Feels like 20°C </p>
+        <p class="weather description">Partly Cloudy</p>
+        <div class="windhumid">
+            <div class="col">
+                <p class="humidity title">Humidity</p>
+                <img  src="images/raindrops.png" alt="humid-icon">
+                <p id="humidity-value">20%</p>
+            </div>
+            <div class="col">
+                <p class="wind title">Wind Speed</p>
+                <img src="images/wind.png" alt="wind-icon" />
+                <p id="wind-value">10mph</p>
+            </div>
+        </div>
+        
+
+
+    </div>
+</main>
+<script src="weatherscript.js"></script>
+</body>
+</html>
