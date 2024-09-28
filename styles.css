@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/sunnybackground.jpeg");
+    
+
+    background-repeat:no-repeat;
+ 
+    background-size:cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    width:100%;
+    height:100%;
+    padding:10%;
+}
+.searchbox{
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 30px;
+    margin: 20px auto 20px;
+    color:white;
+    padding: 7% 10% 20% 10%;
+    
+    padding-bottom: 7%;
+    
+    overflow: hidden;
+    
+    
+}
+
+
+
+.searchtitle{
+    padding:1% 0;
+    text-align: left;
+    
+}
+
+.weatherbox{
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 30px;
+    
+    color:white;
+
+    width: 40%;
+    text-align: center;
+   
+    margin:auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display:none;
+    
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+#weather-icon{
+    width:110px;
+    height:100px;
+}
+.windhumid img{
+    width:100px;
+    height:100px;
+    padding-bottom: 10px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(27, 25, 43, 0.52);
+    border-radius: 30px;
+    margin-top: 1%;
+}
+.windhumid{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    padding-top: 50px;
+    margin-bottom:10px;
+}
+.weatherbox p{
+    margin-top: 20px;
+}
+.col p{
+    margin-top: 0%;
+    padding-bottom: 20px;
+}
+input{
+    width:100%;
+    height:5vh;
+    background: transparent;
+    border:none;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+button{
+    height:5vh;
+    border: none;
+    border-radius: 30px;
+    width:30%;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+.description{
+    text-transform: capitalize;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+
+.searchbutton {
+	display: inline-block;
+
+	background-color: rgba(27, 25, 43, 0.52);
+	font-size: 14px;
+border-radius: 30px;
+
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+
+    position: relative ;
+    left:0%;
+	font-size: 22px;
+	width: 100%;
+	margin: 2px;
+	padding: 0;
+}
+
+.searchbutton:hover {
+	transition-duration: 0.4s;
+
+	background-color: white;
+	color: black;
+}
+
+.search-container {
+	position: relative;
+	display: block;
+    left:80%;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+    text-align: right;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	transform: rotate(-45deg);
+	
+}
+
+
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	background-color: rgba(27, 25, 43, 0.52);
+	color: black;
+    
+}
+
+.search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	background-color: rgba(0,0,0,0.5);
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+
+}
+
+.search:focus {
+	width: 22.5vw; /* Bar width+1px */
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
